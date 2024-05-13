@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+// import { Link } from "react-router-dom";
+// import { useDispatch, useSelector } from "react-redux";
 // import "./styles.css"
 
 const DetailFasilitas = () => {
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
-  const { user } = useSelector((state) => state.auth);
+  // const { user } = useSelector((state) => state.auth);
 
   useEffect(() => {
     getProducts();
@@ -20,14 +20,14 @@ const DetailFasilitas = () => {
     setProducts(response.data);
   };
 
-  const deleteProduct = async (productId) => {
-    try {
-      await axios.delete(`${apiUrl}/labs/${productId}`);
-      getProducts();
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const deleteProduct = async (productId) => {
+  //   try {
+  //     await axios.delete(`${apiUrl}/labs/${productId}`);
+  //     getProducts();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <div>
@@ -38,7 +38,7 @@ const DetailFasilitas = () => {
             <div className="card" style={{ height: '100%' }}>
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <img src={product.url} alt="Image" style={{ objectFit: 'fill', height: '100%' }}/>
+                  <img src={product.url} alt="gambar" style={{ objectFit: 'fill', height: '100%' }}/>
                 </figure>
               </div>
               <div className="card-content" style={{ height: '100%' }}>

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import moment from 'moment-timezone';
+// import moment from 'moment-timezone';
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
-import TimeTable from "react-timetable-events";
+// import TimeTable from "react-timetable-events";
 
 const CardLab = () => {
   const [labs, setLabs] = useState([]);
   const [msg, setMsg] = useState("");
   const { lab } = useParams();
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
   // const { user } = useSelector((state) => state.auth);
 
@@ -29,10 +29,10 @@ const CardLab = () => {
   }, [lab]);
 
   // Fungsi untuk mengonversi waktu ke zona waktu Indonesia Barat (WIB)
-  function convertToWIB(dateTimeString) {
-    const newDate = moment(dateTimeString).tz('Asia/Jakarta');
-    return newDate.format('YYYY-MM-DDTHH:mm');
-  }
+  // function convertToWIB(dateTimeString) {
+  //   const newDate = moment(dateTimeString).tz('Asia/Jakarta');
+  //   return newDate.format('YYYY-MM-DDTHH:mm');
+  // }
   
   return(
     <div className="container is-centered mt-5">
@@ -42,7 +42,7 @@ const CardLab = () => {
             <div className="card">
               <div className="card-image mb-0">
                 <figure className="image is-4by3">
-                  <img src={labo.url} alt="Image" />
+                  <img src={labo.url} alt="gambar" />
                 </figure>
               </div>
               <div className="card-content mt-0">

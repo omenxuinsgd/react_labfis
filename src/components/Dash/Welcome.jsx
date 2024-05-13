@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from "react-redux";
-import Card from './Card';
+// import Card from './Card';
 import DetailFasilitas from './DetailFasilitas';
 
 const Welcome = () => {

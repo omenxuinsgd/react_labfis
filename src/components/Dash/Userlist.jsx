@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Userlist = () => {
   const [users, setUsers] = useState([]);
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {

@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useHistory } from 'react-router-dom';
-import { IoPerson, IoPricetag, IoHome, IoLogOut } from "react-icons/io5";
-import { FcBiomass, FcCollaboration, FcConferenceCall, FcDataRecovery, FcHome, FcInvite, FcKindle, FcMindMap, FcMultipleDevices, FcViewDetails} from "react-icons/fc"
+// import { IoPerson, IoPricetag, IoHome, IoLogOut } from "react-icons/io5";
+import { IoLogOut } from "react-icons/io5";
+import { FcBiomass, FcConferenceCall, FcDataRecovery, FcHome, FcInvite, FcKindle, FcMindMap, FcMultipleDevices, FcViewDetails} from "react-icons/fc"
 import { useDispatch, useSelector } from "react-redux";
 import { LogOut, reset } from '../../features/authSlice';
 import axios from "axios";
-import {
-  HeaderSection,
-  LogoContainer,
-  Burger,
-  NotHidden,
-  Menu,
-  CustomNavLinkSmall,
-  Label,
-  Outline,
-  Span,
-  LabelLogo, DropdownContainer, DropdownItem, DropdownSymbol
-} from "../Header/styles"
+// import {
+//   HeaderSection,
+//   LogoContainer,
+//   Burger,
+//   NotHidden,
+//   Menu,
+//   CustomNavLinkSmall,
+//   Label,
+//   Outline,
+//   Span,
+//   LabelLogo, DropdownContainer, DropdownItem, DropdownSymbol
+// } from "../Header/styles"
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isPeminjamanOpen, setPeminjamanOpen] = useState(false);
   const [isJadwalOpen, setJadwalOpen] = useState(false);
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
   
   const togglePeminjamanMenu = () => {

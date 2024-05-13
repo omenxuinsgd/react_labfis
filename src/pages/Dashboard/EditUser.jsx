@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Layout from './Layout'
+// import Layout from './Layout'
 import FormEditUser from '../../components/Dash/FormEditUser'
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import DetailLab from "./DetailLab";
-import { useDispatch, useSelector } from "react-redux";
+// import DetailLab from "./DetailLab";
+import { useSelector } from "react-redux";
 
 const NewsList = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const [products, setProducts] = useState([]);
-    const [labs, setLabs] = useState([]);
+    // const [labs, setLabs] = useState([]);
   const { user } = useSelector((state) => state.auth);
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {

@@ -12,7 +12,7 @@ const FormEditUser = () => {
   const [msg, setMsg] = useState("");
   const navigate = useHistory();
   const { id } = useParams();
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {

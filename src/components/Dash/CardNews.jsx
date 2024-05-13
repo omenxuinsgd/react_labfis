@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 
 const CardNews = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
   const [products, setProducts] = useState([]);
-  const { user } = useSelector((state) => state.auth);
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const { user } = useSelector((state) => state.auth);
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
   useEffect(() => {
     getProducts();
@@ -18,14 +18,14 @@ const CardNews = () => {
     setProducts(response.data);
   };
 
-  const deleteProduct = async (productId) => {
-    try {
-      await axios.delete(`${apiUrl}/news/${productId}`);
-      getProducts();
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const deleteProduct = async (productId) => {
+  //   try {
+  //     await axios.delete(`${apiUrl}/news/${productId}`);
+  //     getProducts();
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <div className="container is-centered mt-5">
@@ -35,7 +35,7 @@ const CardNews = () => {
             <div className="card">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <img src={product.url} alt="Image" />
+                  <img src={product.url} alt="gambar" />
                 </figure>
               </div>
               <div className="card-content">

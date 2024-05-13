@@ -9,17 +9,19 @@ import Block from "../Block";
 import Input from "../../common/Input";
 // import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { LoginUser, reset } from "../../features/authSlice";
+// import { LoginUser, reset } from "../../features/authSlice";
+import { reset } from "../../features/authSlice";
 
 const Login = ({ title, content, id, t }: ContactProps) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useHistory();
-  const { user, isError, isSuccess, isLoading, message } = useSelector(
+  // const { user, isError, isSuccess, isLoading, message } = useSelector(
+  const { user, isSuccess } = useSelector(
     (state: any) => state.auth
   );
 

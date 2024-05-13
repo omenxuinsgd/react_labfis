@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 import moment from 'moment-timezone';
 
 const ProductList2 = () => {
     const [products, setProducts] = useState([]);
-    const { user } = useSelector((state) => state.auth);
-    const apiKey = process.env.REACT_APP_API_KEY;
+    // const { user } = useSelector((state) => state.auth);
+    // const apiKey = process.env.REACT_APP_API_KEY;
     const apiUrl = process.env.REACT_APP_API_URL;
   
     useEffect(() => {

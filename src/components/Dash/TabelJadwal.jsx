@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import moment from 'moment-timezone';
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+// import { useDispatch, useSelector } from "react-redux";
+import {useParams } from "react-router-dom";
+// import { Link, useParams } from "react-router-dom";
 
 import TimeTable from "react-timetable-events";
 
@@ -10,7 +11,7 @@ const TabelJadwal = () => {
   const [jadwalLab, setJadwalLab] = useState([]);
   const [msg, setMsg] = useState("");
   const { lab } = useParams();
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
   // const { user } = useSelector((state) => state.auth);
 

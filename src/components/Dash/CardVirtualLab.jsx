@@ -1,5 +1,5 @@
 import { SvgIcon } from "../../common/SvgIcon";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const CardVirtualLab = () => {
   
@@ -23,7 +23,7 @@ const CardVirtualLab = () => {
                 </div>
               </div>
               <footer className="card-footer mt-0">
-              <a href="https://phet.colorado.edu/en/simulations/browse" target="_blank" className="card-footer-item">
+              <a href="https://phet.colorado.edu/en/simulations/browse" target="_blank" rel="noreferrer" className="card-footer-item">
                     Kunjungi
                 </a>
                 </footer>
@@ -46,7 +46,7 @@ const CardVirtualLab = () => {
                 </div>
               </div>
               <footer className="card-footer mt-0">
-              <a href="https://www.tinkercad.com/" target="_blank" className="card-footer-item">
+              <a href="https://www.tinkercad.com/" target="_blank" rel="noreferrer" className="card-footer-item">
                     Kunjungi
                 </a>
                 </footer>
@@ -69,7 +69,7 @@ const CardVirtualLab = () => {
                 </div>
               </div>
               <footer className="card-footer mt-0">
-              <a href="https://wokwi.com/" target="_blank" className="card-footer-item">
+              <a href="https://wokwi.com/" target="_blank" rel="noreferrer" className="card-footer-item">
                     Kunjungi
                 </a>
                 </footer>
@@ -92,7 +92,7 @@ const CardVirtualLab = () => {
                 </div>
               </div>
               <footer className="card-footer mt-0">
-              <a href="https://easyeda.com/editor" target="_blank" className="card-footer-item">
+              <a href="https://easyeda.com/editor" target="_blank" rel="noreferrer" className="card-footer-item">
                     Kunjungi
                 </a>
                 </footer>

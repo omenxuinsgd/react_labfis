@@ -11,7 +11,7 @@ const FormEditLab = () => {
   const { id } = useParams();
   const navigate = useHistory();
   const [msg, setMsg] = useState("");
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {

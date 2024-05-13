@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
-import Layout from './Layout'
+import React from 'react'
+// import Layout from './Layout'
 import CardNews from '../../components/Dash/CardNews';
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
-import { getMe } from '../../features/authSlice';
+// import { useDispatch, useSelector } from "react-redux";
+// import { useHistory } from "react-router-dom";
+// import { getMe } from '../../features/authSlice';
 
 const KartuNews = () => {
 //   const dispatch = useDispatch();

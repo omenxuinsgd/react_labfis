@@ -9,7 +9,7 @@ const initialState = {
     message: ""
 }
 
-const apiKey = process.env.REACT_APP_API_KEY;
+// const apiKey = process.env.REACT_APP_API_KEY;
 const apiUrl = process.env.REACT_APP_API_URL;
 
 export const LoginUser = createAsyncThunk("user/LoginUser", async(user, thunkAPI) => {

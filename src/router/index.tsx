@@ -1,11 +1,11 @@
 import { lazy, Suspense, useState, useEffect  } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Header from "../components/Header";
 import routes from "./config";
 import axios, { AxiosError } from "axios";
 import { Styles } from "../styles/styles";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { useParams } from 'react-router-dom';
 
 
@@ -17,9 +17,9 @@ interface RouteParams {
 
 const Router = () => {
   const [jadwalLab, setJadwalLab] = useState([]);
-  const [msg, setMsg] = useState("");
+  // const [msg, setMsg] = useState("");
   const { lab } = useParams<RouteParams>();
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
   // const { user } = useSelector((state) => state.auth);
 

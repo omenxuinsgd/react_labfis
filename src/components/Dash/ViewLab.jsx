@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams} from "react-router-dom";
 
 const ViewNews = () => {
   const [title, setTitle] = useState("");
@@ -11,8 +11,8 @@ const ViewNews = () => {
   const [createdAt, setCreatedAt] = useState("");
   const [preview, setPreview] = useState("");
   const { id } = useParams();
-  const navigate = useHistory();
-  const apiKey = process.env.REACT_APP_API_KEY;
+  // const navigate = useHistory();
+  // const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
@@ -30,11 +30,11 @@ const ViewNews = () => {
     setJudul(response.data.judul);
   };
 
-  const loadImage = (e) => {
-    const image = e.target.files[0];
-    setFile(image);
-    setPreview(URL.createObjectURL(image));
-  };
+  // const loadImage = (e) => {
+  //   const image = e.target.files[0];
+  //   setFile(image);
+  //   setPreview(URL.createObjectURL(image));
+  // };
   return (
     <div className="container">
       <div className="box">

@@ -1,26 +1,29 @@
 import React from 'react'
 import { NavLink, useHistory } from 'react-router-dom'
-import { useDispatch, useSelector } from "react-redux";
-import { LogOut, reset } from '../../features/authSlice';
+// import { useDispatch, useSelector } from "react-redux";
+// import { LogOut, reset } from '../../features/authSlice';
 import { SvgIcon } from "../../common/SvgIcon";
+// import {
+//   HeaderSection,
+//   LogoContainer,
+//   Burger,
+//   NotHidden,
+//   Menu,
+//   CustomNavLinkSmall,
+//   Label,
+//   Outline,
+//   Span,
+//   LabelLogo, DropdownContainer, DropdownItem, DropdownSymbol
+// } from "../Header/styles";
 import {
-  HeaderSection,
-  LogoContainer,
-  Burger,
-  NotHidden,
-  Menu,
-  CustomNavLinkSmall,
-  Label,
-  Outline,
-  Span,
-  LabelLogo, DropdownContainer, DropdownItem, DropdownSymbol
+  LabelLogo
 } from "../Header/styles";
 import './styles.css'
 
 const Navbar = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const navigate = useHistory();
-  const { user } = useSelector((state) => state.auth);
+  // const { user } = useSelector((state) => state.auth);
 
   const laman = () => {
     // dispatch(LogOut());

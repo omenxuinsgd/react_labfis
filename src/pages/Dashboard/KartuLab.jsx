@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
-import Layout from './Layout'
+import React from 'react'
+// import Layout from './Layout'
 import CardLab from '../../components/Dash/CardLab';
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
-import { getMe } from '../../features/authSlice';
+// import { useDispatch, useSelector } from "react-redux";
+// import { useHistory } from "react-router-dom";
+// import { getMe } from '../../features/authSlice';
 
 const KartuLab = () => {
 //   const dispatch = useDispatch();
