@@ -19,7 +19,7 @@ import { store } from './app/store';
 axios.defaults.withCredentials = true;
 
 const App = () => (
-  <BrowserRouter basename={process.env.REACT_APP_HOMEPAGE}>
+  <BrowserRouter basename={'/labfis'}>
     <Provider store={store}>
       <Router />     
     </Provider>
